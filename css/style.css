@@ -546,3 +546,59 @@ ul li:first-child{
   align-items: center;
   gap: 10px;
 }
+
+/* adaptive */
+.burger{
+  display: none;
+  background-color: var(--color-White);
+  height: 532px;
+  padding: 40px;
+}
+.burger .logo{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-Black-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-icons{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.burger ul a, .burger ul li{
+  color: var(--color-Second-Gray);
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 0 !important;
+}
+.burger ul{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+
+@media (max-width:416px) {
+  header{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .block-title h1{
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+  }
+  .intro {
+    background-image: url(../img/mv/intro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
