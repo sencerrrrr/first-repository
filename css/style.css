@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --color-White: #fff;
+  --Montserrat: "Montserrat", sans-serif;
+  --color-Sky: #23A6F0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--Montserrat);
+}
+a{
+  color: #000;
+}
+
+
+/* intro */
+.intro{
+  background-image: url(../img/intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+header a{
+  color: var(--color-White);
+}
+.header-leftSide{
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+.logo a{
+  font-size: 24px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  gap: 21px;
+}
+nav a{
+  font-size: 14px;
+  font-weight: 600;
+}
+.link-panel{
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+.link-login{
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-become-a-member {
+  width: 220px;
+  height: 52px;
+  background-color: var(--color-Sky);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 25px;
+}
+.btn-become-a-member a{
+  font-size: 14px;
+  font-weight: 500;
+}
