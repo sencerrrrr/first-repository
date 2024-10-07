@@ -3,6 +3,8 @@
   --color-White: #fff;
   --Montserrat: "Montserrat", sans-serif;
   --color-Sky: #23a6f0;
+  --color-Gray: #fafafa;
+  --color-Second-Gray: #737373;
 }
 * {
   margin: 0;
@@ -91,17 +93,17 @@ h1 {
   font-weight: 700;
   font-size: 58px;
 }
-.block-title p{
+.block-title p {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   color: var(--color-White);
 }
-.title-buttons{
+.title-buttons {
   display: flex;
   gap: 10px;
 }
-.gqn{
+.gqn {
   color: var(--color-White);
   font-weight: 600;
   font-size: 14px;
@@ -109,7 +111,7 @@ h1 {
   padding: 15px 36px;
   border-radius: 37px;
 }
-.lm{
+.lm {
   color: var(--color-White);
   font-weight: 600;
   font-size: 14px;
@@ -117,4 +119,72 @@ h1 {
   border: 1px solid var(--color-White);
   padding: 15px 36px;
   border-radius: 37px;
+}
+/* block-empty */
+.block-empty {
+  background-color: var(--color-Gray);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.boxs {
+  position: absolute;
+  top: -95px;
+  display: flex;
+  gap: 30px;
+}
+.box {
+  background-color: var(--color-White);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 328px;
+  padding: 35px 35px 40px;
+  -webkit-box-shadow: 0px 11px 29px 1px rgba(34, 60, 80, 0.27);
+  -moz-box-shadow: 0px 11px 29px 1px rgba(34, 60, 80, 0.27);
+  box-shadow: 0px 11px 29px 1px rgba(34, 60, 80, 0.27);
+}
+.box:last-child{
+  background-color: var(--color-Sky);
+  color: var(--color-White);
+}
+.box h4{
+  font-weight: 600;
+  font-size: 24px;
+} 
+.box p{
+  color: var(--color-Second-Gray);
+  font-weight: 500;
+  font-size: 14px;
+}
+/* main */
+/* block-bonuses */
+.block-bonuses{
+  height: 435px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bonuses{
+  display: flex;
+  gap: 30px;
+}
+.bonus{
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+.bonus h4{
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.bonus p{
+  color: var(--color-Second-Gray);
+  font-weight: 500;
+  font-size: 14px;
 }
