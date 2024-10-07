@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --color-White: #fff;
   --Montserrat: "Montserrat", sans-serif;
-  --color-Sky: #23A6F0;
+  --color-Sky: #23a6f0;
 }
 * {
   margin: 0;
@@ -13,59 +13,57 @@
   box-sizing: border-box;
   font-family: var(--Montserrat);
 }
-a{
+a {
   color: #000;
 }
 
-
 /* intro */
-.intro{
+.intro {
   background-image: url(../img/intro.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
-header{
+header {
   display: flex;
   justify-content: center;
 }
-.header-container{
+.header-container {
   display: flex;
   justify-content: space-between;
   width: 1050px;
   padding-top: 33px;
   padding-bottom: 33px;
 }
-header a{
+header a {
   color: var(--color-White);
 }
-.header-leftSide{
+.header-leftSide {
   display: flex;
   align-items: center;
   gap: 75px;
 }
-.logo a{
+.logo a {
   font-size: 24px;
   font-weight: 600;
 }
-nav ul{
+nav ul {
   display: flex;
   gap: 21px;
 }
-nav a{
+nav a {
   font-size: 14px;
   font-weight: 600;
 }
-.link-panel{
+.link-panel {
   display: flex;
   align-items: center;
   gap: 45px;
 }
-.link-login{
+.link-login {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .btn-become-a-member {
-  width: 220px;
   height: 52px;
   background-color: var(--color-Sky);
   border-radius: 5px;
@@ -73,8 +71,50 @@ nav a{
   align-items: center;
   gap: 15px;
   padding-left: 25px;
+  padding-right: 25px;
 }
-.btn-become-a-member a{
+.btn-become-a-member {
   font-size: 14px;
+  font-weight: 600;
+}
+/* block-title */
+.block-title {
+  padding-top: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 217px;
+}
+h1 {
+  color: var(--color-White);
+  font-weight: 700;
+  font-size: 58px;
+}
+.block-title p{
+  font-size: 20px;
   font-weight: 500;
+  text-align: center;
+  color: var(--color-White);
+}
+.title-buttons{
+  display: flex;
+  gap: 10px;
+}
+.gqn{
+  color: var(--color-White);
+  font-weight: 600;
+  font-size: 14px;
+  background-color: var(--color-Sky);
+  padding: 15px 36px;
+  border-radius: 37px;
+}
+.lm{
+  color: var(--color-White);
+  font-weight: 600;
+  font-size: 14px;
+  background-color: none;
+  border: 1px solid var(--color-White);
+  padding: 15px 36px;
+  border-radius: 37px;
 }
